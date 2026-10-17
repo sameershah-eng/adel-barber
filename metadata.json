@@ -1,0 +1,6 @@
+{
+  "name": "Adel Barber | Huddersfield Precision Barbershop",
+  "description": "Huddersfield's precision barbershop at 17 Cloth Hall St. Specialist in all hair types, skin fades, beard trims, and hot towel shaves. Rated 4.9/5.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

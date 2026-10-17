@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Clash Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-body: "Satoshi", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-warm-canvas: #FAF7F2;
+  --color-warm-surface: #FFFFFF;
+  --color-warm-muted: #F4EFE6;
+  --color-warm-border: #E8E0D2;
+  --color-charcoal: #1A1A1A;
+  --color-charcoal-muted: #57534E;
+  --color-copper: #B8572B;
+  --color-amber: #D98A3D;
+  --color-gold: #E9C46A;
+  --color-teal: #1F4E5A;
+}
+
+:root {
+  font-family: var(--font-body);
+  color-scheme: light;
+}
+
+/* Base Headings & Typography System */
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Fluid Heading Scales */
+.hero-headline {
+  font-size: clamp(3rem, 9vw, 9.5rem);
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+}
+
+.section-title {
+  font-size: clamp(2.25rem, 5vw, 5rem);
+  letter-spacing: -0.03em;
+  line-height: 0.96;
+}
+
+.eyebrow-label {
+  font-family: var(--font-body);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+}
+
+/* Custom Cursor active class for desktop pointer */
+body.has-custom-cursor,
+body.has-custom-cursor * {
+  cursor: none !important;
+}
+
+/* Barber Pole Animated Accent Strip */
+@keyframes barberPole {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 0;
+  }
+}
+
+.barber-pole-stripe {
+  background: repeating-linear-gradient(
+    -45deg,
+    #B8572B,
+    #B8572B 10px,
+    #FAF7F2 10px,
+    #FAF7F2 16px,
+    #1F4E5A 16px,
+    #1F4E5A 26px,
+    #FAF7F2 26px,
+    #FAF7F2 32px
+  );
+  background-size: 50px 50px;
+  animation: barberPole 3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .barber-pole-stripe {
+    animation: none;
+  }
+  body.has-custom-cursor,
+  body.has-custom-cursor * {
+    cursor: auto !important;
+  }
+}
+
+/* Signature Warm Copper-Amber Gradient */
+.bg-signature-gradient {
+  background: linear-gradient(135deg, #B8572B 0%, #D98A3D 50%, #E9C46A 100%);
+}
+
+.text-signature-gradient {
+  background: linear-gradient(135deg, #B8572B 0%, #D98A3D 55%, #E9C46A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Tactile Grain Overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(26, 26, 26, 0.045) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Faint Geometric Grid Lines */
+.bg-grid-faint {
+  background-image: linear-gradient(to right, rgba(232, 224, 210, 0.35) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(232, 224, 210, 0.35) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* Conic gradient rotation for luxury card border hover */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotateConic {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.animated-gradient-border {
+  --angle: 0deg;
+  animation: rotateConic 4s linear infinite;
+  background-image: conic-gradient(from var(--angle), #B8572B, #D98A3D, #E9C46A, #1F4E5A, #B8572B);
+}
+
+/* Lenis Recommended CSS */
+html {
+  scroll-padding-top: 96px;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Shimmer Animation for SmartImage placeholder */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Scrollbar styling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
