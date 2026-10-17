@@ -10,7 +10,7 @@ interface BookingCTAProps {
 
 export const BookingCTA: React.FC<BookingCTAProps> = ({ onOpenBooking }) => {
   return (
-    <section className="py-24 relative overflow-hidden bg-[#1A1A1A] text-white">
+    <section className="cta-y relative overflow-hidden bg-[#1A1A1A] text-white">
       {/* Background Copper & Amber Radial Highlights */}
       <div
         className="absolute top-0 right-1/4 w-[36rem] h-[36rem] bg-[#B8572B]/20 rounded-full blur-[120px] pointer-events-none -z-10"
@@ -22,7 +22,7 @@ export const BookingCTA: React.FC<BookingCTAProps> = ({ onOpenBooking }) => {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="p-8 sm:p-14 md:p-18 rounded-[36px] bg-gradient-to-br from-[#B8572B] via-[#9E461F] to-[#1F4E5A] shadow-2xl relative overflow-hidden border border-white/15">
+        <div className="p-8 sm:p-12 md:p-16 rounded-[36px] bg-gradient-to-br from-[#B8572B] via-[#9E461F] to-[#1F4E5A] shadow-2xl relative overflow-hidden border border-white/15">
           {/* Subtle Atmospheric Shop Photo Texture in Background */}
           <div className="absolute inset-0 opacity-15 mix-blend-overlay pointer-events-none">
             <SmartImage

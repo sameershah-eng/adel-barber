@@ -58,6 +58,19 @@ h1, h2, h3, h4, .font-display {
   font-size: 11px;
 }
 
+/* Reusable Section Spacing System: clamp(3.5rem, 7vw, 6.5rem) */
+.section-y {
+  padding-block: clamp(3.5rem, 7vw, 6.5rem);
+}
+
+.cta-y {
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+
+.heading-block-mb {
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
 /* Custom Cursor active class for desktop pointer */
 body.has-custom-cursor,
 body.has-custom-cursor * {

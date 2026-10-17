@@ -18,12 +18,12 @@ export const Reviews: React.FC = () => {
   };
 
   return (
-    <section id="reviews" className="py-28 sm:py-36 bg-white border-b border-[#E8E0D2]/80">
+    <section id="reviews" className="section-y bg-white border-b border-[#E8E0D2]/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Big 4.9 Score Carrier (5 cols) */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="flex items-center gap-4 mb-2">
+            <div className="flex items-center gap-4 mb-3 sm:mb-4">
               <span className="eyebrow-label text-[#B8572B]">
                 05 / REPUTATION
               </span>

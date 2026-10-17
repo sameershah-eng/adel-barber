@@ -73,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
     <motion.section
       ref={containerRef}
       style={{ scale: heroScale, opacity: heroOpacity }}
-      className="relative min-h-[100svh] pt-32 pb-16 md:pt-40 md:pb-24 flex flex-col justify-between overflow-hidden bg-[#FAF7F2] bg-grid-faint"
+      className="relative min-h-[100svh] pt-28 pb-0 md:pt-36 md:pb-0 flex flex-col justify-between overflow-hidden bg-[#FAF7F2] bg-grid-faint"
     >
       {/* Drifting Ambient Gradient Orbs (pointer-events-none, strictly background) */}
       <motion.div
@@ -289,7 +289,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       </div>
 
       {/* Bottom Hero Elements: Scroll Indicator & Infinite Rotated Marquee Ribbon */}
-      <div className="mt-8 space-y-4 relative z-10">
+      <div className="mt-4 sm:mt-6 space-y-2 relative z-10">
         <div className="flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-widest text-[#57534E]/70">
           <span>Scroll</span>
           <motion.div

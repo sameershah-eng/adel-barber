@@ -26,11 +26,11 @@ export const WhyUs: React.FC = () => {
   };
 
   return (
-    <section id="why-us" className="py-28 sm:py-36 bg-white border-b border-[#E8E0D2]/80">
+    <section id="why-us" className="section-y bg-white border-b border-[#E8E0D2]/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
-        <div className="max-w-3xl mb-16 sm:mb-20">
-          <div className="flex items-center gap-4 mb-4">
+        <div className="max-w-3xl heading-block-mb">
+          <div className="flex items-center gap-4 mb-3 sm:mb-4">
             <span className="eyebrow-label text-[#B8572B]">
               03 / THE STANDARD
             </span>
@@ -49,13 +49,13 @@ export const WhyUs: React.FC = () => {
             </SplitText>
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg text-[#57534E]">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-[#57534E]">
             Six uncompromising pillars that govern our daily craft in Huddersfield town centre.
           </p>
         </div>
 
         {/* Bento Grid with Spring Counters */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {businessData.bentoFeatures.map((feat, index) => (
             <motion.div
               key={feat.id}

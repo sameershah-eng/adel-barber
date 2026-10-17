@@ -14,11 +14,11 @@ export const Location: React.FC = () => {
   };
 
   return (
-    <section id="location" className="py-28 sm:py-36 bg-white">
+    <section id="location" className="section-y bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16 sm:mb-20">
-          <div className="flex items-center gap-4 mb-4">
+        <div className="max-w-3xl heading-block-mb">
+          <div className="flex items-center gap-4 mb-3 sm:mb-4">
             <span className="eyebrow-label text-[#B8572B]">
               07 / LOCATION & TRANSIT
             </span>
@@ -37,13 +37,13 @@ export const Location: React.FC = () => {
             </SplitText>
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg text-[#57534E]">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-[#57534E]">
             Situated in central Huddersfield, steps away from the train station, bus interchange, and local car parks.
           </p>
         </div>
 
         {/* Map & Address Split Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
           {/* Address & Wayfinding Card (5 cols) */}
           <div className="lg:col-span-5 flex flex-col justify-between p-8 sm:p-10 rounded-3xl bg-[#FAF7F2] border border-[#E8E0D2] shadow-sm space-y-6">
             <div className="space-y-5">

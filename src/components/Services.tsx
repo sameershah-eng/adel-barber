@@ -24,11 +24,11 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
   });
 
   return (
-    <section id="services" className="py-28 sm:py-36 bg-[#FAF7F2] relative">
+    <section id="services" className="section-y bg-[#FAF7F2] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header with Eyebrow Drawing Line */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="flex items-center justify-center gap-4 mb-4">
+        <div className="text-center max-w-3xl mx-auto heading-block-mb">
+          <div className="flex items-center justify-center gap-4 mb-3 sm:mb-4">
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: '3rem' }}
@@ -54,12 +54,12 @@ export const Services: React.FC<ServicesProps> = ({ onSelectService }) => {
             </SplitText>
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg text-[#57534E] leading-relaxed">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-[#57534E] leading-relaxed">
             Every cut and shave is delivered with deliberate attention. Transparent timing, unhurried consultations, and bespoke finishing.
           </p>
 
           {/* Interactive Category Segmented Tabs with Sliding Pill */}
-          <div className="mt-10 inline-flex items-center p-1.5 rounded-full bg-white border border-[#E8E0D2] shadow-xs">
+          <div className="mt-6 sm:mt-8 inline-flex items-center p-1.5 rounded-full bg-white border border-[#E8E0D2] shadow-xs">
             {categories.map((cat) => {
               const isActive = selectedCategory === cat.id;
               return (

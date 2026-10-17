@@ -26,11 +26,11 @@ export const Gallery: React.FC = () => {
   }, [activePhotoIndex, photos.length]);
 
   return (
-    <section id="gallery" className="py-28 sm:py-36 bg-[#FAF7F2] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-14">
+    <section id="gallery" className="section-y bg-[#FAF7F2] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 heading-block-mb">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl">
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-4 mb-3 sm:mb-4">
               <span className="eyebrow-label text-[#B8572B]">
                 04 / VISUAL SHOWCASE
               </span>
@@ -57,7 +57,7 @@ export const Gallery: React.FC = () => {
       </div>
 
       {/* Infinite Horizontal Marquee Strip */}
-      <div className="relative w-full group py-6">
+      <div className="relative w-full group py-2">
         <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-[#FAF7F2] to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-[#FAF7F2] to-transparent z-10 pointer-events-none" />
 

@@ -7,13 +7,13 @@ import { SmartImage } from './SmartImage';
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-28 sm:py-36 bg-white relative overflow-hidden border-y border-[#E8E0D2]/80">
+    <section id="about" className="section-y bg-white relative overflow-hidden border-y border-[#E8E0D2]/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header with Line Drawing Eyebrow */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-20 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between heading-block-mb gap-4 sm:gap-6">
           <div className="max-w-2xl">
             {/* Eyebrow with expanding line */}
-            <div className="flex items-center gap-4 mb-4">
+            <div className="flex items-center gap-4 mb-3 sm:mb-4">
               <span className="eyebrow-label text-[#B8572B]">
                 01 / THE PHILOSOPHY
               </span>
@@ -39,7 +39,7 @@ export const About: React.FC = () => {
         </div>
 
         {/* Asymmetric Overlapping Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Overlapping Images (7 cols) */}
           <div className="lg:col-span-7 relative order-2 lg:order-1">
             <div className="relative">

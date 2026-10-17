@@ -9,11 +9,11 @@ export const Hours: React.FC = () => {
   const status = useBusinessHours();
 
   return (
-    <section id="hours" className="py-28 sm:py-36 bg-[#FAF7F2] border-b border-[#E8E0D2]/80">
+    <section id="hours" className="section-y bg-[#FAF7F2] border-b border-[#E8E0D2]/80">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header with Eyebrow Drawing Line */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="flex items-center justify-center gap-4 mb-4">
+        <div className="text-center max-w-2xl mx-auto heading-block-mb">
+          <div className="flex items-center justify-center gap-4 mb-3 sm:mb-4">
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: '3rem' }}
@@ -39,12 +39,12 @@ export const Hours: React.FC = () => {
             </SplitText>
           </h2>
 
-          <p className="mt-4 text-base sm:text-lg text-[#57534E]">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-[#57534E]">
             Open 7 days a week in Huddersfield town centre. Early evening availability every weekday.
           </p>
 
           {/* Live Badge */}
-          <div className="mt-8 inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white border border-[#E8E0D2] shadow-sm text-xs sm:text-sm">
+          <div className="mt-5 sm:mt-6 inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white border border-[#E8E0D2] shadow-sm text-xs sm:text-sm">
             <span
               className={`w-2.5 h-2.5 rounded-full ${
                 status.isOpen ? 'bg-emerald-500 animate-pulse' : 'bg-stone-400'
